@@ -1,0 +1,100 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Grundinställningar för att nollställa marginaler och paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff6f1; /* Bakgrundsfärg från designen */
+  color: #ff4965; /* Primär färg från designen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Centrering av text och huvudrubriker */
+h1,
+h2 {
+  text-align: center;
+  color: #ff4965;
+}
+
+label {
+  font-weight: bold;
+  color: #512da8; /* Textfärg för etiketter */
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"],
+button {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  border: 1px solid #512da8; /* Lila ram för inputs */
+  color: #512da8;
+}
+
+button {
+  background-color: #ff4965; /* Rosa bakgrundsfärg för knappar */
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e33e55; /* Mörkare rosa vid hover */
+}
+
+button:active {
+  background-color: #c7354b; /* Ännu mörkare rosa vid klick */
+}
+
+/* Logotypens styling */
+img.logo {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Laddningsskärmen */
+.loadingScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff6f1;
+}
+
+.loadingScreen h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #ff4965;
+}
+
+.loadingScreen p {
+  font-size: 24px;
+  margin: 0;
+  color: #512da8;
+}
